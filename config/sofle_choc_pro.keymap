@@ -85,7 +85,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>,
                 <&inc_dec_kp C_PREV C_NEXT>;
         };
 
@@ -107,6 +107,8 @@
 &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
                 &trans          &kp GLOBE       &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "arrows";
         };
 
         bluetooth_layer {
