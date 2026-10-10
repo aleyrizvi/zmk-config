@@ -42,6 +42,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        // J+K chorded together = Esc, since the dedicated Esc is a
+        // double-tap. require-prior-idle keeps fast j->k rolls as letters.
+        combo_esc {
+            timeout-ms = <40>;
+            key-positions = <31 32>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+    };
+
     behaviors {
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
